@@ -1,54 +1,45 @@
 <script lang="ts">
-  const projects = [
+  const programDays = [
     {
-      client: "Red Bull",
-      desc: "A global platform built to Scale, Evolve, and Perform.",
-      bg: "bg-[#000c2d]",
-      img: "", // Placeholder logic handled in template
-      dark: true
-    },
-    {
-      client: "Volvo",
-      desc: "Redefining how people experience insurance.",
-      bg: "bg-gray-200",
-      img: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800",
+      day: "Day One",
+      title: "Exploring Your Limits",
+      desc: "Leadership fundamentals and core skills doctors rarely develop in traditional medical training.",
+      bg: "bg-white",
+      img: "/generated/image-group-of-professional-doctors-in-a-moder-1765589068252-1.webp",
       dark: false
     },
     {
-      client: "The Organics",
-      desc: "Translating a refreshing identity into a bold platform.",
-      bg: "bg-[#8da356]",
-      img: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800",
+      day: "Day One",
+      title: "Performance Under Pressure",
+      desc: "Understanding decision-making, communication, and resilience in high-stakes environments.",
+      bg: "bg-gray-100",
+      img: "/generated/image-professional-medical-conference-setting--1765589084122-7.webp",
       dark: false
     },
     {
-      client: "Isar Aerospace",
-      desc: "Launching a brand journey into orbit.",
+      day: "Day Two",
+      title: "Courage & Risk",
+      desc: "Translating leadership theory into visceral experience through high-performance driving.",
       bg: "bg-black",
-      img: "",
+      img: "/generated/image-close-up-of-hands-on-a-porsche-steering--1765589071034-2.webp",
       dark: true
     },
     {
-      client: "REWE",
-      desc: "Digital Convenience in your Pocket.",
-      bg: "bg-[#f0f0f0]",
-      img: "https://images.unsplash.com/photo-1512428559087-560fa5ce7d87?auto=format&fit=crop&q=80&w=800",
+      day: "Day Two",
+      title: "Speed & Skill",
+      desc: "Professional Porsche coaches guide you through precision driving at full speed on the track.",
+      bg: "bg-gray-900",
+      img: "/generated/image-porsche-sports-car-taking-a-sharp-corner-1765589073708-3.webp",
+      dark: true
+    },
+    {
+      day: "Beyond",
+      title: "One-to-One Coaching",
+      desc: "Continue your leadership journey with personalized coaching tailored to your goals.",
+      bg: "bg-gray-50",
+      img: "/generated/image-professional-porsche-driving-instructor--1765589076177-4.webp",
       dark: false,
-      full: true // Making REWE full width to align last two items
-    },
-    {
-      client: "Alpha Tauri",
-      desc: "Designing the interface of wearable intelligence.",
-      bg: "bg-[#e0e0e0]",
-      img: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800",
-      dark: false
-    },
-    {
-      client: "Zalando",
-      desc: "Designing the Zalando E-Commerce Operating System.",
-      bg: "bg-[#d8c5f0]",
-      img: "https://images.unsplash.com/photo-1555421689-49263376da7a?auto=format&fit=crop&q=80&w=800",
-      dark: false
+      full: true
     }
   ];
 </script>
@@ -56,25 +47,28 @@
 <section class="px-6 md:px-12 py-24 bg-white">
   <div class="max-w-3xl mb-16">
     <h2 class="text-2xl md:text-3xl font-medium leading-tight">
-      <span class="font-bold">We orchestrate strategy, design, and technology</span> to create digital experiences that connect with millions and give you the edge that sets you apart.
+      <span class="font-bold">Two days that challenge everything you know about leadership.</span> From the boardroom to the racetrack, discover what you're truly capable of when you push beyond your limits.
     </h2>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12">
-    {#each projects as project}
-      <div class="group cursor-pointer {project.full ? 'md:col-span-2' : ''}">
-        <div class={`aspect-[4/3] w-full rounded-lg overflow-hidden relative ${project.bg} mb-4 ${project.full ? 'md:aspect-[2.5/1]' : ''}`}>
-          {#if project.img}
-             <img src={project.img} alt={project.client} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+    {#each programDays as program}
+      <div class="group cursor-pointer {program.full ? 'md:col-span-2' : ''}">
+        <div class={`aspect-[4/3] w-full rounded-lg overflow-hidden relative ${program.bg} mb-4 ${program.full ? 'md:aspect-[2.5/1]' : ''}`}>
+          {#if program.img}
+             <img src={program.img} alt={program.title} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           {:else}
-             <!-- Placeholder for logos on solid bg -->
              <div class="w-full h-full flex items-center justify-center">
-                <span class={`text-2xl font-bold ${project.dark ? 'text-white' : 'text-black'}`}>{project.client} Logo</span>
+                <span class={`text-2xl font-bold ${program.dark ? 'text-white' : 'text-black'}`}>{program.title}</span>
              </div>
           {/if}
         </div>
-        <h3 class="text-sm font-bold mb-1">{project.client}</h3>
-        <p class="text-sm text-gray-600">{project.desc}</p>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs font-bold text-primary-600">{program.day}</span>
+          <span class="text-xs text-gray-400">•</span>
+          <h3 class="text-sm font-bold">{program.title}</h3>
+        </div>
+        <p class="text-sm text-gray-600">{program.desc}</p>
       </div>
     {/each}
   </div>

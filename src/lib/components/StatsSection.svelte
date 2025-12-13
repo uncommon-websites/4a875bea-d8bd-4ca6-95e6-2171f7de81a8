@@ -1,24 +1,24 @@
 <script lang="ts">
   const stats = [
     {
-      label: "30+ People",
-      desc: "You're a small, but mighty team of curious problem-solvers and explorers. With a versatile, Swiss-knife mentality, we thrive on tackling diverse challenges. Our core team is tight-knit, yet we seamlessly tap into a wider network of experts when needed. Here, theory meets practice, and together, we get things done.",
-      img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200"
+      label: "CPD Accredited",
+      desc: "Track Limits qualifies for medical continuous professional development credits. This isn't just an experience—it's recognized professional development that counts toward your CPD requirements while delivering transformative leadership insights.",
+      img: "/generated/image-professional-medical-conference-setting--1765589084122-7.webp"
     },
     {
-      label: "14+ Awards",
-      desc: "Our work speaks for itself—recognized internationally, we've already earned some awards. These accolades reflect the passion and innovation we pour into every project, pushing boundaries and delivering results that make an impact.",
-      img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=200"
+      label: "12 Participants Maximum",
+      desc: "We deliberately keep groups small to ensure personalized attention and meaningful connections. With a 3:1 participant-to-coach ratio, you'll receive individual guidance throughout both days of the experience.",
+      img: "/generated/image-group-of-professional-doctors-in-a-moder-1765589068252-1.webp"
     },
     {
-      label: "CGN, BLN, Remote",
-      desc: "Headquartered in Cologne, with an expanding team in Berlin, we also embrace remote work. Our colleagues span across cities like Barcelona, Stuttgart, Munich, and more, bringing a mix of perspectives and expertise to everything we do. Whether in the office or working remotely, we stay connected and collaborative.",
-      img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=200"
+      label: "Porsche Experience Centre",
+      desc: "Day two takes place at a world-class Porsche Experience Centre with professional racing coaches. You'll drive high-performance Porsches on a purpose-built track designed to push your limits in a safe, controlled environment.",
+      img: "/generated/image-porsche-sports-car-taking-a-sharp-corner-1765589073708-3.webp"
     },
     {
-      label: "B-Corp",
-      desc: "We've officially joined the ranks of B-Corp certified companies. This means we meet the highest standards of social and environmental performance, accountability, and transparency. We're proud to use business as a force for good, ensuring our impact extends beyond just profit.",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/B_Corp_Logo.svg/1200px-B_Corp_Logo.svg.png" // Placeholder
+      label: "2-Day Immersion",
+      desc: "This isn't a half-day workshop. Track Limits is a complete two-day immersive experience that gives you time to truly explore, reflect, and integrate new leadership capabilities. Day one focuses on skills; day two on application.",
+      img: "/generated/image-mid-career-doctor-in-their-40s-reflectin-1765589078658-5.webp"
     }
   ];
 </script>
@@ -26,7 +26,7 @@
 <section class="py-24 px-6 md:px-12 bg-white border-t border-gray-100">
   <div class="mb-16">
     <p class="text-gray-500 max-w-xl">
-      Curious about who we are? Here's a snapshot of the team, our achievements, and the milestones we're proud of.
+      What makes Track Limits different? Here's what you need to know about this unique leadership experience.
     </p>
   </div>
 
