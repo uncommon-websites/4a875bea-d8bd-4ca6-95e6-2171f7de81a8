@@ -23,6 +23,10 @@
     <div class="flex flex-wrap gap-6 text-xs text-gray-500">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+        Healthcare Leadership
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
         Leadership Skills
       </div>
       <div class="flex items-center gap-2">
