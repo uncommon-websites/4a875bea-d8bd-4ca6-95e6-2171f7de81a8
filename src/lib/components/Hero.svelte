@@ -11,7 +11,7 @@
 
   <div class="max-w-4xl mb-16 pt-40 relative z-10">
     <h1 class="text-3xl md:text-5xl font-medium leading-[1.15] tracking-tight mb-6">
-      Unlock you potential - at full speed
+      Unlock your potential - at full speed
     </h1>
     <p class="text-lg text-gray-400 max-w-2xl">
       CPD accredited • Porsche Experience Centre • Limited to 12 participants
