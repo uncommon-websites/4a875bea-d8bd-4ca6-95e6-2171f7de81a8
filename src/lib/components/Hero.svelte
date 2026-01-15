@@ -1,5 +1,5 @@
 <script lang="ts">
-  const heroImage = "/generated/image-professional-doctor-in-their-40s-standin-1765589064374-0.webp";
+  const heroImage = "/generated/image-sleek-porsche-sports-cars-on-a-professio-1768457392733-0.webp";
 </script>
 
 <section class="relative min-h-screen flex flex-col justify-end pb-20 px-6 md:px-12 bg-black text-white">
